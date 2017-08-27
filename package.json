@@ -1,0 +1,11 @@
+{
+  "name": "BaleedsAngularWP",
+  "description": "An angular wordpress theme for baleeds.com",
+  "version": "1.0",
+  "homepage": "baleeds.com",
+  "author": "Benjamin Leeds <baleeds@ncsu.edu>",
+  "dependencies": {
+    "angular": "^1.6.6",
+    "angular-route": "^1.6.6"
+  }
+}
