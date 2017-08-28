@@ -6,6 +6,6 @@
   "author": "Benjamin Leeds <baleeds@ncsu.edu>",
   "dependencies": {
     "angular": "^1.6.6",
-    "angular-route": "^1.6.6"
+    "angular-route": "^1.6.6",
   }
 }
