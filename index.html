@@ -6,12 +6,40 @@
 	<link href="https://fonts.googleapis.com/css?family=Merriweather:400,700" rel="stylesheet">
 	<script src="./node_modules/angular/angular.min.js"></script>
 	<script src="./node_modules/angular-route/angular-route.min.js"></script>
+	<script src="./node_modules/angular-sanitize/angular-sanitize.min.js"></script>
 	<script src="./app.module.js"></script>
 	<script src="./app.config.js"></script>
 	<script src="./views/homepage/homepage.controller.js"></script>
+	<script src="./views/singlePost/singlePost.controller.js"></script>
+	<script src="./common/factories/postFactory.js"></script>
+	<script src="./common/filters/htmlToPlainText.js"></script>
+
 </head>
 <body class="content">
-	{{ 'hi' + ' you'}}
-	<div ng-view></div>
+	<nav class="navbar" id="Navbar">
+		<a href="javascript:void(0);" class="navbar-icon" id="NavbarIcon">
+			<div class="bar1"></div>
+			<div class="bar2"></div>
+			<div class="bar3"></div>
+		</a>
+		<ul class="navbar-navlist" id="NavList">
+			<li class="navbar-brand"><a href="./index.html">Benjamin Leeds</a></li>
+			<li class="active" style="margin-left: -4px;"><a href="/">Journal</a></li>
+			<li><a href="#!/gallery/portrait">Portrait</a></li>
+			<li><a href="#!/gallery/landscape">Landscape</a></li>
+			<!--li><a href="./travel.html">Travel</a></li-->
+		</ul>
+
+		<!--div class="navbar-right">
+			<input type="text" placeholder="search" class="search-field input-text" name="search" id="searchInput" style="display:none;"></input>
+			<button class="search-button" id="searchButton">
+				<svg height="32px" version="1.1" viewBox="0 0 32 32" width="32px" xmlns="http://www.w3.org/2000/svg" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" xmlns:xlink="http://www.w3.org/1999/xlink"><title/><desc/><defs/><g fill="none" fill-rule="evenodd" id="Page-1" stroke="none" stroke-width="1"><g id="icon-111-search"><path d="M19.4271164,21.4271164 C18.0372495,22.4174803 16.3366522,23 14.5,23 C9.80557939,23 6,19.1944206 6,14.5 C6,9.80557939 9.80557939,6 14.5,6 C19.1944206,6 23,9.80557939 23,14.5 C23,16.3366522 22.4174803,18.0372495 21.4271164,19.4271164 L27.0119176,25.0119176 C27.5621186,25.5621186 27.5575313,26.4424687 27.0117185,26.9882815 L26.9882815,27.0117185 C26.4438648,27.5561352 25.5576204,27.5576204 25.0119176,27.0119176 L19.4271164,21.4271164 L19.4271164,21.4271164 Z M14.5,21 C18.0898511,21 21,18.0898511 21,14.5 C21,10.9101489 18.0898511,8 14.5,8 C10.9101489,8 8,10.9101489 8,14.5 C8,18.0898511 10.9101489,21 14.5,21 L14.5,21 Z" id="search"/></g></g></svg>
+			</button>
+		</div-->
+	</nav>
+	<main ng-view></main>
+	<footer class="footer">
+		&copy; 2017 Benjamin Leeds
+	</footer>
 </body>
 </html>

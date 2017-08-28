@@ -3,10 +3,14 @@ app.config(['$locationProvider', '$routeProvider',
     $locationProvider.hashPrefix('!');
 
     $routeProvider
-      .when('/', {
+      .when('/journal', {
         controller: 'HomepageController',
         templateUrl: '/views/homepage/homepage.template.html'
       })
-      .otherwise('/');
+      .when('/journal/:slug', {
+        controller: 'SinglePostController',
+        templateUrl: '/views/singlePost/singlePost.template.html'
+      })
+      .otherwise('/journal');
 
   }]);

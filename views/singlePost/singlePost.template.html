@@ -1,0 +1,33 @@
+<div class="container">
+		<div class="row card">
+			<div class="twelve columns">
+				<div class="article-header row">
+					<span class="article-category">{{ post.category }}</span>
+					<span class="article-date">{{ post.date | date:"longDate" }}</span>
+				</div>
+				<h1>{{ post.title.rendered }}</h1>
+        <div ng-bind-html="post.content.rendered"></div>
+      </div>
+    </div>
+		<!--div class="card row">
+			<div class="row">
+				<div class="twelve columns">
+					<h2 class="no-margin">Other articles from this category</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="one-third column">
+					<a href="#"><h3>Article One and the Things That Go With It</h3></a>
+					<p>This self portrait was taken with the Godox octobox with the speedlite and diffuser cap.  I think the light is quite flattering</p>
+				</div>
+				<div class="one-third column">
+					<a href="#"><h3>Article One and the Things That Go With It</h3></a>
+					<p>This self portrait was taken with the Godox octobox with the speedlite and diffuser cap.  I think the light is quite flattering</p>
+				</div>
+				<div class="one-third column">
+					<a href="#"><h3>Article One and the Things That Go With It</h3></a>
+					<p>This self portrait was taken with the Godox octobox with the speedlite and diffuser cap.  I think the light is quite flattering</p>
+				</div>
+			</div>
+		</div-->
+	</div>

@@ -1,1 +1,22 @@
-<h1>{{ test }}</h1>
+<div class="container">
+	<div class="row card">
+		<div class="twelve columns">
+			<h1>Thank you for visiting.</h1>
+			<p>I've put together this site to showcase some of my photography work and to share my various photography related thoughts and experiments.</p>
+			<h3>My Journey with Photography</h3>
+			<p>I started shooting in 2013 and haven't stopped learning since.  There's something special about <a href="./portrait.html">photographing people</a> that drives me to continue improving.  A great photographer knows how to capture the essence of a person's spirit with the most ideal perspective, and one day I hope to be a great photographer.  In the meantime, I enjoy taking pictures of the various experiences and <a href="./landscape.html">landscapes</a> that I'm exposed to.</p>
+			<p>I shoot with a Fujifilm X-E1, and its been everywhere with me.  I've been through various brands, but my current camera feels natural in my hands, and gets in the way is little as possible.</p>
+		</div>
+	</div>
+  <div class="row card article-preview" ng-repeat="post in posts">
+		<div class="twelve columns">
+			<div class="article-header row">
+				<a href="#"><span class="article-category">{{ post.category }}</span></a>
+				<span class="article-date">{{ post.date | date:"longDate" }}</span>
+			</div>
+			<h2><a href="#!/journal/{{ post.slug }}">{{ post.title.rendered }}</a></h2>
+			<p>{{ post.excerpt.rendered | htmlToPlainText }}</p>
+      <p><a href="#!/journal/{{ post.slug }}">Continue Reading</a></p>
+		</div>
+	</div>
+</div>
