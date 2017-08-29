@@ -18,17 +18,9 @@ app.directive('imgrow', ['$window', function ($window) {
           totalAspect += (element[0].children[i].width / element[0].children[i].height);
         };
         recalculateImageRow();
+        element[0].classList.add("img-row-loaded");
       }
-    })
-
-
-
-
-
-
-
-    element[0].classList.add("img-row-loaded");
-
+    });
 
     angular.element($window).bind('resize', function(){
       recalculateImageRow();
