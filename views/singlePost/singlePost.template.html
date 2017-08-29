@@ -1,12 +1,16 @@
 <div class="container">
 		<div class="row card">
-			<div class="twelve columns">
+			<div class="loader inline-loader" ng-show="loading"></div>
+			<div class="twelve columns" ng-show="error">
+				<p>We seem to be having trouble... please try again later!</p>
+			</div>
+			<div class="twelve columns" ng-hide="loading">
 				<div class="article-header row">
-					<span class="article-category">{{ post.category }}</span>
+					<span class="article-category">{{ tags[post.tags[0]].name }}</span>
 					<span class="article-date">{{ post.date | date:"longDate" }}</span>
 				</div>
 				<h1>{{ post.title.rendered }}</h1>
-        <div ng-bind-html="post.content.rendered"></div>
+        <div compile-html="post.content.rendered"></div>
       </div>
     </div>
 		<!--div class="card row">
@@ -30,4 +34,7 @@
 				</div>
 			</div>
 		</div-->
+		<div class="row card" ng-show="error">
+
+		</div>
 	</div>

@@ -7,7 +7,7 @@ app.factory('postFactory', ['$http', function($http) {
 
   postFactory.getPostBySlug = function(postSlug) {
     return $http.get("http://www.baleeds.com/wordpress/wp-json/wp/v2/posts?slug=" + postSlug);
-  }
+  };
 
   return postFactory;
 }]);

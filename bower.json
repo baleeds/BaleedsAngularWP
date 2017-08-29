@@ -1,9 +1,0 @@
-{
-  "name": "BaleedsAngularWP",
-  "version": "1.0",
-  "main": [
-    "./app.module.js",
-    "./index.html"
-  ],
-  "description": "An angular wordpress theme for baleeds.com"
-}
