@@ -4,7 +4,7 @@
 			<div class="twelve columns" ng-show="error">
 				<p>We seem to be having trouble... please try again later!</p>
 			</div>
-			<div class="twelve columns" ng-hide="loading">
+			<div class="twelve columns" ng-hide="loading" bl-lightbox>
 				<div class="article-header row">
 					<span class="article-category">{{ tags[post.tags[0]].name }}</span>
 					<span class="article-date">{{ post.date | date:"longDate" }}</span>

@@ -1,6 +1,5 @@
 app.directive('imgrow', ['$window', function ($window) {
   return function(scope, element) {
-    console.log(scope, element);
 
     var totalAspect = 0;
 

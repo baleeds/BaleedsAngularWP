@@ -162,7 +162,7 @@ div,img,footer {
   box-sizing: border-box;
   border-style: solid;
     box-shadow: 0px 2px 3px #a5a5a5, inset 0 0 5px #929292;
-    background: url(../img/matte-trans.png);
+    background: url(./img/matte-trans.png);
 }
 .gallery-image:hover {
   cursor: pointer;
@@ -210,14 +210,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
   right: 0;
   bottom: 0;
   z-index: 55;
-  background: url(../img/matte-trans.png);
-  text-align: center;
-  padding: 3%;
-  visibility: hidden;
-  opacity: 0;
+  background-color: white;
+  /*visibility: hidden;
+  opacity: 0;*/
   transition: opacity 0.3s, visibility 0.3s;
   height: 100%;
 }
+.lightbox-topbar {
+  text-align: right;
+}
+
 .lightbox-image {
   max-height: 95%;
   position: absolute;
@@ -230,15 +232,27 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
   left: 50%;
   transform: translate(-50%,-50%);
 }
+.lightbox-image-holder img {
+  width: auto;
+  margin-right: 7px;
+  display: inline-block;
+  height: 100%;
+  opacity: 0.2;
+}
+.lightbox-image-holder img.active {
+  opacity: 1;
+}
+.lightbox-image-holder {
+  position: relative;
+  display: block;
+  white-space: nowrap;
+  height: 500px;
+}
 .lightbox-close {
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 60;
   padding: 10px;
+  display: inline-block;
 }
 .lightbox-close:hover {
-  color: #a5a5a5;
   cursor: pointer;
 }
 .content {
