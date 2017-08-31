@@ -1,6 +1,7 @@
-app.config(['$locationProvider', '$routeProvider',
-  function($locationProvider, $routeProvider) {
+app.config(['$locationProvider', '$routeProvider', '$disqusProvider',
+  function($locationProvider, $routeProvider, $disqusProvider) {
     $locationProvider.hashPrefix('!');
+    $disqusProvider.setShortname('baleeds');
 
     $routeProvider
       .when('/journal', {
@@ -12,5 +13,7 @@ app.config(['$locationProvider', '$routeProvider',
         templateUrl: '/views/singlePost/singlePost.template.html'
       })
       .otherwise('/journal');
+
+
 
   }]);

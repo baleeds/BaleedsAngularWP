@@ -6,6 +6,7 @@
   "author": "Benjamin Leeds <baleeds@ncsu.edu>",
   "dependencies": {
     "angular": "^1.6.6",
+    "angular-disqus": "^1.1.3",
     "angular-route": "^1.6.6",
     "angular-sanitize": "^1.6.6"
   }

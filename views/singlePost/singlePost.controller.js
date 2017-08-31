@@ -4,7 +4,7 @@ app.controller('SinglePostController', ['$scope', 'postFactory', 'tagFactory', '
   $scope.tags = tagFactory.tags;
   $scope.loading = true;
   $scope.error = false;
-  $scope.url =
+  $scope.slug = $routeParams.slug;
 
   postFactory.getPostBySlug($routeParams.slug)
     .then(
