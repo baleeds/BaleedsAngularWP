@@ -8,7 +8,6 @@ app.directive('imgrow', ['$window', function ($window) {
     };
 
     var images = element.find('img');
-    console.log(images);
     var waitingImages = images.length;
     images.bind('load', function() {
       waitingImages--;

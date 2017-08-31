@@ -203,6 +203,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
     transition: opacity 0.3s, visibility 0.3s;
     z-index: 20;
 }
+.clickable:hover {
+  cursor: pointer;
+}
 .lightbox {
   position: fixed;
   top: 0;
@@ -211,10 +214,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
   bottom: 0;
   z-index: 55;
   background-color: white;
-  /*visibility: hidden;
-  opacity: 0;*/
+  visibility: hidden;
+  opacity: 0;
   transition: opacity 0.3s, visibility 0.3s;
   height: 100%;
+}
+.lightbox.lightbox-open {
+  visibility: visible;
+  opacity: 1;
 }
 .lightbox-topbar {
   text-align: right;
@@ -246,7 +253,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
   position: relative;
   display: block;
   white-space: nowrap;
-  height: 500px;
+  height: 80vh;
 }
 .lightbox-close {
   padding: 10px;
