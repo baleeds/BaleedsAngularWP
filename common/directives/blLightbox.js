@@ -7,7 +7,7 @@ app.directive('blLightbox', [function() {
 
         // only add these elements once.
         if (!document.getElementById("Lightbox")) {
-          element.append('<div class="lightbox" id="Lightbox"><div class="lightbox-topbar"><div id="LightboxClose" class="lightbox-close"><svg width="24px" height="24" viewport="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg"><line x1="1" y1="18" x2="18" y2="1" stroke="#7b7b7b" stroke-width="4"></line><line x1="1" y1="1" x2="18" y2="18" stroke="#7b7b7b" stroke-width="4"></line></svg></div></div><div class="lightbox-image-holder" id="lightboxImageHolder"></div><div class="lightbox-left clickable" id="LightboxLeft"></div><div class="lightbox-right clickable" id="LightboxRight"></div></div>');
+          element.append('<div class="lightbox" id="Lightbox"><div class="lightbox-topbar"><div id="LightboxClose" class="lightbox-close"><svg width="24px" height="24" viewport="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg"><line x1="1" y1="18" x2="18" y2="1" stroke="#7b7b7b" stroke-width="4"></line><line x1="1" y1="1" x2="18" y2="18" stroke="#7b7b7b" stroke-width="4"></line></svg></div></div><div class="lightbox-image-holder" id="lightboxImageHolder"></div><div class="lightbox-left clickable" id="LightboxLeft"><i class="arrow arrow-left"></i></div><div class="lightbox-right clickable" id="LightboxRight"><i class="arrow arrow-right"></i></div></div>');
         }
 
         var images = element.find('img');
